@@ -1,0 +1,48 @@
+<html>
+  <head><style>
+    body{
+
+    overflow:hidden;
+/*  background-image: url("final hakko tatami.png");
+  background-repeat: repeat;
+  background-size:50px;*/
+  background-color:#aa00dd;
+  margin:0;
+  padding:0;
+}
+#toplevel{
+  width:600px;
+  height:371px;
+  outline: #000000 solid 2px;
+}
+#return{
+  position:relative;
+  left:0px;
+  top:315px;
+}
+</style><title>Randori</title><link rel="icon" href="favicon.ico" sizes="16x16" type="image/ico"></head>
+  <body>
+    <div id="toplevel">
+    <div id="container" style="width:280px;height:371px;">
+    <button id="button"><font size="3">Generate Henka</font></button>
+    <div id="return"><a href="http://24.231.182.198/Dojo/"><font size="4" color="white"><b>Return to homepage</b></font></a></div>
+    <font size="5" color="white"><b><div id="name"></div>
+    <div id="principle"></div>
+    <div id="atemi"></div>
+  </b></font>
+
+</div>
+    <div id="image" style="width:319.81px;height:371px;position:relative;top:-371px;left:280px;"><img src="image.png" height="371" width="320"></div>
+</div>
+  </body>
+  <script src="main.js"></script>
+  <script>
+var container = document.getElementById("toplevel");
+container.style.position="absolute";
+container.style.top=(window.innerHeight-371)/2+"px";
+container.style.left=(window.innerWidth-600)/2+"px";
+if(window.innerWidth<600){
+  document.getElementsByTagName("html")[0].style.transform="scale("+window.innerWidth/600+")";
+}
+  </script>
+</html>

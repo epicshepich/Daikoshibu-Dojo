@@ -1,0 +1,2 @@
+add kanji translator
+add translate to main

@@ -1,0 +1,38 @@
+html{
+  overflow-y:auto;
+  overflow-x:hidden;
+  font-size:169%;
+}
+html,body{
+  margin:0.5%;
+  padding:0.5%;
+  background-color:#aa00dd;
+  color:#FFFFFF;
+  text-align:left;
+}
+head{
+  margin:0px;
+  padding:0px;
+}
+a:link,a:visited{
+  color:#00FFFF;
+  }
+a:hover{
+  color:#FFFFFF;
+}
+a:active{
+  color:#0000FF;
+}
+h1{
+  font-size:145%;
+}
+h2{
+  font-size:120%;
+}
+h3{
+  font-size:110%;
+}
+h6{
+  font-size:50%;
+  color:#eeeeee;
+}

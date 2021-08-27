@@ -1,0 +1,51 @@
+<html>
+<head>
+
+  <link rel="stylesheet" type="text/css" href="common.css">
+<style>
+#message{
+  width:55%;
+  height:40%;
+  overflow:auto;
+}
+input,#message{
+  background-color:#ddaaff;
+  color:#000000;
+  font-size: 100%;
+}
+input[type=submit]{
+  font-size: 100%;
+}
+</style>
+<h1>Questions? Comments? Concerns? Queries? Posers? Contact us!</h1><hr>
+</head>
+<body>
+You can email us at <a target="_blank" href="mailto:daikoshibudojo@gmail.com">daikoshibudojo@gmail.com</a>,<br>
+Or you can <a target="_blank" href="hakkojujutsu.com/contact">contact our headquarters</a>.<hr>
+
+<h2>Submit a question:</h2>
+<form method="post" action="mail.php">
+
+Name:<br>
+<input type="text" name="name"><br>
+Email Address:<br>
+<input type="email" name="email"><br>
+Phone Number:<br>
+<input type="text" name="phone"><br>
+Message:<br>
+<!--<input id="message" type="text" name="message" size="300" autocomplete="off">-->
+<textarea id="message" name="message"></textarea><h6><span id="charcount">0 characters</span></h6>
+<br>
+<input type="submit" value="Submit">
+</form>
+</body>
+<script>
+var charcount = document.getElementById("charcount");
+function charcounter(){
+  var length = document.getElementById("message").value.length;
+  charcount.innerHTML=length+" characters";
+}
+window.addEventListener("keyup",charcounter);
+</script>
+<script src="common.js"></script>
+</html>
